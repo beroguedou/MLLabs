@@ -4,9 +4,10 @@ Machine Learning Laboratory for quick and easy experiences in docker container. 
 
 
 <h1> Prerequisites: </h1>
-        Docker-CE 
-        Nvidia-Docker 
-    
+<ul>
+    <li> Docker-CE </li>
+    <li> Nvidia-Docker </li> 
+</ul>   
  
 0- Clone this repository and navigate inside by doing:
         cd ./MLLabs
