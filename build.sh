@@ -1,1 +1,1 @@
-docker image build -t env_pytorch_ber:1.0 .
+docker image build -t mllabs:1.0 .
