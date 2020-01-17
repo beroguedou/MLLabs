@@ -1,10 +1,11 @@
 # MLLabs
-Machine Learning Laboratory for quick and easy experiences in docker container.
+
+Machine Learning Laboratory for quick and easy experiences in docker container. It will allow you to make machine learning experiences without having to install all the stuff on you computer. So you just have to manage conatiner that you could destroy when you want.
 
 
-Prerequisites:
-    - Docker-CE 
-    - Nvidia-Docker 
+<h1> Prerequisites: </h1>
+        Docker-CE 
+        Nvidia-Docker 
     
  
 0- Clone this repository and navigate inside by doing:
