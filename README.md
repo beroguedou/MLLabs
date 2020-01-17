@@ -1,2 +1,2 @@
 # MLLabs
-Machine Learning Laboratory to quick and easy experiences.
+Machine Learning Laboratory for quick and easy experiences in docker container.
