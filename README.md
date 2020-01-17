@@ -4,7 +4,7 @@ Machine Learning Laboratory for quick and easy experiences in docker container. 
 
 
 <h1> Prerequisites: </h1>
-<ul style:"color= red ">
+<ul>
     <li> Docker-CE </li>
     <li> Nvidia-Docker </li> 
 </ul>   
