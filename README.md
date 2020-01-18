@@ -18,7 +18,7 @@ Machine Learning Laboratory for quick and easy experiences in docker container. 
 
         make the script executable :
 
-        ```bash
+        ```sh
         chmod +x build.sh
         ```
 
