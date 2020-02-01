@@ -1,18 +1,29 @@
-# Use ufoym/deepo image as parent image
-
-FROM ufoym/deepo
-
+FROM anibali/pytorch:cuda-10.1
 ADD requirements.txt .
 
-# Install all libraries in requirements
 RUN python -m pip install --upgrade pip &&\
-	 python -m pip install --no-cache-dir -r ./requirements.txt\
-	&& rm -rf /var/lib/apt/lists/* 
-# Create a volume in container to expose to host
-RUN mkdir ~/stockage
+         python -m pip install --no-cache-dir -r ./requirements.txt\
+        && rm -rf /var/lib/apt/lists/*
 
-EXPOSE 5000
+RUN conda install -y nodejs opencv Cython jupyter jupyterlab && \
+    conda install -c conda-forge tensorboardx && \
+    conda install -c conda-forge librosa && \
+    conda clean -ya
+
+RUN jupyter labextension install jupyterlab_tensorboard
+
+RUN pip install jupyter_tensorboard torchvision scikit-image
+
+# tensorboard
+EXPOSE 6006
+# jupyter notebook
 EXPOSE 8888
 
-VOLUME /stockage
- 
+USER root
+
+WORKDIR /home
+
+RUN mkdir stockage
+
+VOLUME stockage
+
