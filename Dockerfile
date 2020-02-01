@@ -19,11 +19,12 @@ EXPOSE 6006
 # jupyter notebook
 EXPOSE 8888
 
-USER root
+# USER root
 
-WORKDIR /home
+# RUN mkdir /home/stockage
 
-RUN mkdir stockage
+# WORKDIR /home/stockage
 
-VOLUME stockage
+# VOLUME /home/stockage
+
 

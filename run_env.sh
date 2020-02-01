@@ -31,7 +31,7 @@ if [ "$op" = "start" ]; then
         docker run -d --gpus all -it -p 8888:8888 -p 6006:6006 \
             --name=$NAME \
             --hostname="root" \
-            -v /home/data:/root/stockage\
+            -v /home/data:/root/\
             --ipc=host mllabs:1.0 jupyter notebook \
             --no-browser --ip=0.0.0.0 --allow-root \
             --NotebookApp.token= --notebook-dir='/root'
